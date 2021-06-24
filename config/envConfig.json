@@ -1,0 +1,39 @@
+
+
+{
+  "protocol": "http://",
+  "port": 8888,
+  "mobMaxSize": 1000,
+  "system": {
+    "checkReferer": false,
+    "csp": true
+  },
+  "api": {
+    "foundation": "tmnf-dev1-tmnf-tmnf-foundation.dev1.za-gj-aws.net",
+    "cdc": "tmnf-dev1-tmnf-tmnf-cdc.dev1.za-gj-aws.net",
+    "claim": "tmnf-dev1-tmnf-tmnf-claim.dev1.za-gj-aws.net",
+    "bizapply": "tmnf-dev1-tmnf-tmnf-bizapply.dev1.za-gj-aws.net",
+    "dm": "tmnf-dev1-tmnf-tmnf-dm-backend.dev1.za-gj-aws.net"
+  },
+  "redis": {
+    "port": 6379,
+    "host": "awschina-nx-redis-app-01.dqimer.ng.0001.cnw1.cache.amazonaws.com.cn",
+    "useSSL": false,
+    "expireTime": 3600,
+    "timeout": 5000,
+    "options": {
+      "connectionName": "tmnf",
+      "connectTimeout": 10000
+    },
+    "EXTRA_KEYNAME": "TMNF_MYPAGE_dev1", 
+    "MAX_AGE": 1800000
+  },
+  "sessionConfig": {
+    "store": "",
+    "key": "SESSIONID",
+    "path": "/",
+    "httpOnly": true,
+    "sameSite": "strict",
+    "maxAge": 1800000
+  }
+}

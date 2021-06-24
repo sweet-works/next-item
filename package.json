@@ -5,18 +5,38 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
+    "start1": "next start",
+    "start": "cross-env NODE_ENV=development node server",
     "lint": "next lint"
   },
   "dependencies": {
+    "better-opn": "^3.0.0",
+    "cross-env": "^5.2.0",
+    "css-loader": "^5.0.1",
+    "eslint-loader": "^4.0.2",
+    "koa": "^2.5.1",
+    "koa-body": "^4.2.0",
+    "koa-bodyparser": "^4.3.0",
+    "koa-compress": "^3.0.0",
+    "koa-router": "^7.4.0",
+    "koa-session": "^6.0.0",
+    "koa-session2": "^2.2.10",
+    "koa2-connect": "1.0.2",
     "next": "11.0.1",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "redis-sessions": "^3.0.0"
   },
   "devDependencies": {
     "@types/react": "17.0.11",
     "eslint": "7.29.0",
     "eslint-config-next": "11.0.1",
-    "typescript": "4.3.4"
+    "typescript": "4.3.4",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.21.5",
+    "eslint-plugin-react-hooks": "^4.0.0",
+    "husky": "^4.3.0"
   }
 }
